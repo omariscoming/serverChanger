@@ -1,4 +1,5 @@
 function changeserver(){
+sudo apt-get install sshpass jq -y
 read -p "OldServer: " OLDONE
 read -p "NewServer: " NEWONE
 read -p "Record Domain: " domain
