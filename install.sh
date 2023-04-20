@@ -18,7 +18,7 @@ sudo apt update && sudo apt install nginx certbot python3-certbot-nginx -y
     systemctl restart nginx
     x-ui restart
 "
-ssh -o StrictHostKeyChecking=no "root@$NEWONE" "$ssh_command"
+ssh "root@$NEWONE" "$ssh_command"
 
 }
 changeserver
