@@ -20,7 +20,7 @@ sudo apt update && sudo apt install nginx certbot python3-certbot-nginx -y
     	sshpass -p "$OLDPASS" scp -r root@$OLDONE:/etc/x-ui/x-ui.db /etc/x-ui/
 	x-ui restart
 "
-sshpass -p "NEWPASS" ssh -o StrictHostKeyChecking=no "root@$NEWONE" "$ssh_command"
+sshpass -p "$NEWPASS" ssh -o StrictHostKeyChecking=no "root@$NEWONE" "$ssh_command"
 }
 
 changeserver
